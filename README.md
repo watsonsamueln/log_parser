@@ -9,3 +9,15 @@
 * To test, run: `rspec` in terminal
 
 
+---
+
+Example Output:
+```
+Page: /about/2
+Total views: 90
+Unique views: 22
+
+...
+```
+
+
