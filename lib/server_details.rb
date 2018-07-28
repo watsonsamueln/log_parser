@@ -8,7 +8,7 @@ class ServerDetails
   end
 
   def pageviews
-  	sorted_hash = @parsed_log.sort_by{ |key, val| val }.reverse.to_h
+  	sorted_hash = @parsed_log.sort_by{ |key, val| val.count }.reverse.to_h
   	sorted_hash.map do |key, value|
   		Struct::Pageview.new(key, value.count, value.uniq.count)
 	  end
