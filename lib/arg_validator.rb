@@ -13,7 +13,7 @@ class ArgValidator
   private
 
   def single_arg?
-		@args.count == 1
+    @args.count == 1
   end
 
   def file?(arg: nil)
